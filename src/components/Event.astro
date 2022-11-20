@@ -1,0 +1,40 @@
+---
+export interface Props {
+  title: string;
+  date: string;
+  text: string;
+  img: string;
+}
+const { name, date, text, img } = Astro.props;
+
+const backgroundImg = "url(https://picsum.photos/200)";
+// const backgroundImg = "rgb(24 121 78)";
+
+
+---
+<div class="flex justify-between bg-[#8DC63F] shadow-xl">
+  <div class="flex flex-col w-3/5 p-8 gap-6">
+	<div class="flex flex-col gap-4">
+		<h2 class="text-3xl font-semibold">{ name }</h2>
+		<h3 class="text-xl">{ date }</h3>
+		<div class="h-40 overflow-auto">
+		<p class="text-justify overflow-auto">{ text }</p></div>
+	</div>
+	<div class="flex justify-start items-center font-bold gap-4">
+		<h1>Confirm assist</h1>
+		<a href="#" class="bg-[#F2F2F2] text-[#8DC63F] font-semibold py-2 px-4 rounded-full">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+		</a>
+	</div>
+  </div>
+  <div class="w-2/5 flex bg-center bg-no-repeat bg-cover bg-img">
+  </div>
+</div>
+<style define:vars={{ backgroundImg }}>
+.bg-img{
+	background-image: var(--backgroundImg);
+}
+
+
+
+</style>

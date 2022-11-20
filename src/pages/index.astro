@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Energyville">
+  <!-- FIRST SECTION -->
+  <section class="h-1/5 py-20 m-auto grid grid-cols-3">
+    <div class="w-full relative ">
+      <div class="w-full border-b-[6px] border-black absolute top-[126px]">
+      </div>
+    </div>
+    <div class="h-1/2 p-0">
+      <img
+        src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668880706/gadgeon/energyville/logo_energyville_1_trnknd.jpg"
+        alt="logo"
+        class="max-h-[300px]"
+      />
+    </div>
+    <div class="w-full relative">
+      <div class="w-full border-b-[6px] border-black absolute top-[126px]">
+      </div>
+    </div>
+  </section>
+  <!-- SECOND SECTION -->
+  <div class="h-[450px] w-full flex gap-8 mb-[200px]">
+    <div
+      class="w-3/5 h-full pt-4 px-20 flex flex-col justify-between bg-[#8DC63F]"
+    >
+      <h1 class="pl-20">Let us grow together!</h1>
+      <div class="w-full flex justify-between gap-20 ">
+          <img
+            src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668887297/gadgeon/energyville/Vector_1_aozs0w.png"
+            alt="plant growing"
+			class="h-[300px]"
+          />
+        
+        <p class="w-2/3">
+          EnergyVille’s Partner Connect is a network of partners that are
+          delivering service and technologies in relation with the
+          electrification of our society.
+        </p>
+      </div>
+    </div>
+    <div
+      class="w-2/5 h-full justify-center gap-10 flex flex-col bg-[#07693A] border-t-black border-t-[6px]"
+    >
+      <div class="ml-80">
+        <Button href="main.html" title="Sign up" />
+      </div>
+      <div class="ml-40">
+        <Button href="#" title="Sign in" />
+      </div>
+    </div>
+  </div>
+  <!-- THIRD SECTION -->
+  <div class="h-[300px] mt-40 mb-[200px] w-full flex gap-8 relative">
+    <div
+      class="w-1/5 h-full py-10 pl-40 pr-20 flex flex-col gap-10 bg-[#07693A] border-t-black border-t-[6px] relative"
+    >
+    </div>
+
+    <div class="w-4/5 h-full flex items-center px-20  relative bg-[#8DC63F]">
+      <p class="w-2/3">
+        Together there is an tremendous opportunity in front of us. Buildings ,
+        Grids, Vehicles and People need to change the way they handle energy.
+      </p>
+      <img
+        src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668887297/gadgeon/energyville/Vector_2_onsvad.png"
+        alt="plant growing"
+		class="w-[400px] h-[400px] absolute -top-[30px] right-[100px]"
+      />
+    </div>
+  </div>
+  
+<Footer/>
+
+</Layout>
+
+<style>
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  p {
+    font-size: 34px;
+    font-weight: 200;
+    color: white;
+    line-height: 50px;
+  }
+</style>
