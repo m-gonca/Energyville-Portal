@@ -1,0 +1,28 @@
+---
+export interface Props {
+  name: string;
+  email: string;
+}
+const { name, email } = Astro.props;
+---
+<div class="flex h-[200px] justify-between bg-[#E0FFBD] shadow-2xl">
+  <div class="flex flex-col w-4/5 p-8 gap-4">
+    <div class="flex justify-between gap-2">
+      <h2 class="text-xl font-bold">Name</h2>
+      <h4 class="text-lg font-light">{ name }</h4>
+    </div>
+    <div class="flex justify-between gap-2">
+      <h2 class="text-xl font-bold">Email</h2>
+      <h4 class="text-lg font-light">{ email }</h4>
+    </div>
+    <div class="flex justify-end items-center">
+      <a href="/edit"><img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668995314/gadgeon/energyville/Vector_3_we4izq.png" alt="edit"></a>
+      <a href="/edit"><img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668995238/gadgeon/energyville/icon__person_delete__qyn9s8.png" alt="add user"></a>
+      <a href="/edit"><img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668995284/gadgeon/energyville/icon__lock__b6ccrq.png" alt="lock"></a>
+    </div>
+  </div>
+  <div class="w-1/5 flex justify-center items-center bg-[#8DC63F]">
+	<img src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668994639/gadgeon/energyville/icon__person_outline__ltitup.png" alt="certification" >
+  </div>
+</div>
+

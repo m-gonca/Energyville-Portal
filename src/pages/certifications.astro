@@ -1,16 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Profile from "../components/Profile.astro";
+import SetCert from "../components/SetCert.astro";
 
 const name = "*partner name*";
 ---
 
 <Layout title="Energyville">
-  <div class="flex">
+  <div class="h-full flex">
     <Sidebar/>
-    <div class="w-full flex flex-col mt-20">
-      <Profile title="Certifications" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668986188/gadgeon/energyville/Profile_ub7imq.png"/>
+    <div class="h-full w-full flex flex-col mt-20">
+      <SetCert title="Certifications"/>
     </div>
   </div>
 </Layout>
