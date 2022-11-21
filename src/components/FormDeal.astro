@@ -1,0 +1,127 @@
+---
+export interface Props {
+  dealid: string;
+  status: string;
+  partnerid: string;
+  date: string;
+  name: string;
+  endcustomer: string;
+  size: string;
+  location: string;
+  contact: string;
+  service: string;
+  type: string;
+  closedate: string;
+  description: string;
+  planning: string;
+}
+const {
+  dealid,
+  status,
+  partnerid,
+  date,
+  name,
+  endcustomer,
+  size,
+  location,
+  contact,
+  service,
+  type,
+  closedate,
+  description,
+  planning,
+} = Astro.props;
+---
+
+<div
+  class="flex flex-col justify-between bg-[rgb(224,255,189)] shadow-2xl p-10 relative"
+>
+  <!-- SAVE BUTTON -->
+  <button class="absolute right-0 -bottom-[100px] border-b-black">
+    <img
+      src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669067302/gadgeon/energyville/icon__save__do1dl7.png"
+      alt="edit"
+    />
+  </button>
+  <!-- FIRST ROW -->
+  <div class="flex justify-between border-b-[6px] border-black py-4">
+    <div class="flex flex-col gap-2">
+      <h2 class="text-xl font-bold">Deal Id</h2>
+      <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{dealid}</h4>
+    </div>
+    <div class="flex flex-col gap-2">
+      <h2 class="text-xl font-bold">Status</h2>
+      <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{status}</h4>
+    </div>
+  </div>
+  <!-- SECOND ROW -->
+  <div
+    class="flex flex-col gap-4 justify-between border-b-[6px] border-black py-4"
+  >
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-xl font-bold">Partner Id</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{partnerid}</h4>
+      </div>
+      <div class="flex flex-col gap-2 text-right">
+        <h2 class="text-xl font-bold">Date</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{date}</h4>
+      </div>
+    </div>
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-xl font-bold">Deal Name</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{name}</h4>
+      </div>
+      <div class="flex flex-col gap-2 text-right">
+        <h2 class="text-xl font-bold">End Customer Name</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{endcustomer}</h4>
+      </div>
+    </div>
+  </div>
+  <!-- THIRD ROW -->
+  <div class="flex flex-col gap-4 justify-between py-4">
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-xl font-bold">Deal Size</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{size}</h4>
+      </div>
+      <div class="flex flex-col gap-2 text-right">
+        <h2 class="text-xl font-bold">Customer Location</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{location}</h4>
+      </div>
+    </div>
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-xl font-bold">Customer Contact name</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{contact}</h4>
+      </div>
+      <div class="flex flex-col gap-2 text-right">
+        <h2 class="text-xl font-bold">Requested Service Type</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{service}</h4>
+      </div>
+    </div>
+    <div class="flex justify-between">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-xl font-bold">Type of project</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{type}</h4>
+      </div>
+      <div class="flex flex-col gap-2 text-right">
+        <h2 class="text-xl font-bold">Expected Closing Date</h2>
+        <h4 class="text-lg font-light bg-[#89c6448a] rounded-lg px-4">{closedate}</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORTH ROW -->
+  <div class="flex flex-col w-full gap-4 py-4">
+  <div class="flex flex-col gap-2 pt-4">
+    <h2 class="text-xl text-justify font-bold">Deal description</h2>
+    <p class="h-[200px] text-lg font-light bg-[#89c6448a] rounded-lg p-4">{description}</p>
+  </div>
+  <div class="flex flex-col gap-2">
+    <h2 class="text-xl text-justify font-bold">Planning</h2>
+    <p class="h-[200px] text-lg font-light bg-[#89c6448a] rounded-lg p-4">{planning}</p>
+  </div>
+</div>
+</div>
