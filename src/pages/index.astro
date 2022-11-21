@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 <Layout title="Energyville">
   <!-- FIRST SECTION -->
   <section class="h-1/5 py-20 m-auto grid grid-cols-3">
-    <div class="w-full relative ">
+    <div class="w-full relative">
       <div class="w-full border-b-[6px] border-black absolute top-[126px]">
       </div>
     </div>
@@ -26,17 +26,17 @@ import Footer from "../components/Footer.astro";
   <!-- SECOND SECTION -->
   <div class="h-[450px] w-full flex gap-8 mb-[200px]">
     <div
-      class="w-3/5 h-full pt-4 px-20 flex flex-col justify-between bg-[#8DC63F]"
+      class="w-3/5 h-full pt-4 px-20 flex flex-col gap-14 bg-[#8DC63F] relative"
     >
       <h1 class="pl-20">Let us grow together!</h1>
-      <div class="w-full flex justify-between gap-20 ">
-          <img
-            src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668887297/gadgeon/energyville/Vector_1_aozs0w.png"
-            alt="plant growing"
-			class="h-[300px]"
-          />
-        
-        <p class="w-2/3">
+      <div class="w-full flex justify-end">
+        <img
+          src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668952673/gadgeon/energyville/illustration__Growth__qqcs0v.png"
+          alt="plant growing"
+          class="h-[350px] absolute -bottom-8 -left-2"
+        />
+
+        <p class="w-3/5">
           EnergyVille’s Partner Connect is a network of partners that are
           delivering service and technologies in relation with the
           electrification of our society.
@@ -50,7 +50,7 @@ import Footer from "../components/Footer.astro";
         <Button href="main.html" title="Sign up" />
       </div>
       <div class="ml-40">
-        <Button href="#" title="Sign in" />
+        <Button href="main.html" title="Sign in" />
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@ import Footer from "../components/Footer.astro";
     >
     </div>
 
-    <div class="w-4/5 h-full flex items-center px-20  relative bg-[#8DC63F]">
+    <div class="w-4/5 h-full flex items-center px-20 relative bg-[#8DC63F]">
       <p class="w-2/3">
         Together there is an tremendous opportunity in front of us. Buildings ,
         Grids, Vehicles and People need to change the way they handle energy.
@@ -69,13 +69,12 @@ import Footer from "../components/Footer.astro";
       <img
         src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668887297/gadgeon/energyville/Vector_2_onsvad.png"
         alt="plant growing"
-		class="w-[400px] h-[400px] absolute -top-[30px] right-[100px]"
+        class="w-[400px] h-[400px] absolute -top-[30px] right-[100px]"
       />
     </div>
   </div>
-  
-<Footer/>
 
+  <Footer />
 </Layout>
 
 <style>
