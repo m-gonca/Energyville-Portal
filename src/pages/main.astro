@@ -1,7 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Set from "../components/Set.astro";
+import SetTrain from "../components/SetTrain.astro";
+import SetEvents from "../components/SetEvents.astro";
 
 const name = "*partner name*";
 ---
@@ -13,8 +14,8 @@ const name = "*partner name*";
       <div class="text-left p-8 px-40">
         <h1 class="text-6xl font-medium">Welcome back <span class="italic font-light">{ name }</span></h1>
       </div>
-      <Set title="Upcoming events" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668952448/gadgeon/energyville/Group_1_azi9sx.png"/>
-      <Set title="Upcoming trainings" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668956339/gadgeon/energyville/Recurso_5_1_1_qy1des.png"/>
+      <SetEvents title="Upcoming events" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668952448/gadgeon/energyville/Group_1_azi9sx.png"/>
+      <SetTrain title="Upcoming trainings" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668956339/gadgeon/energyville/Recurso_5_1_1_qy1des.png"/>
     </div>
   </div>
 </Layout>
