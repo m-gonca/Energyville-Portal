@@ -6,12 +6,11 @@ export interface Props {
   title: string;
   img: string;
 }
-
 const { title, img } = Astro.props;
 ---
 
 <div class="flex flex-col w-full">
-  <div class="h-screen flex flex-col  mb-10">
+  <div class="h-screen flex flex-col mb-10">
     <div class="pl-40 pr-20">
       <div class="flex w-full gap-10 relative">
         <div class="h-full w-4/5 flex flex-col gap-12 mt-4">
@@ -33,7 +32,7 @@ const { title, img } = Astro.props;
           />
         </div>
         <div class="absolute -bottom-20 right-40">
-          <img src={ img } alt="set type" class="h-[400px]" />
+          <img src={img} alt="set type" class="h-[400px]" />
         </div>
       </div>
     </div>

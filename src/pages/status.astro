@@ -1,26 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Profile from "../components/Profile.astro";
+import ProfStat from "../components/ProfStat.astro";
 
 const name = "*partner name*";
 ---
 
 <Layout title="Energyville">
-  <div class="flex">
+  <div class="h-screen flex">
     <Sidebar/>
-    <div class="w-full flex flex-col mt-20">
-      <Profile title="Status" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668986188/gadgeon/energyville/Profile_ub7imq.png"/>
+    <div class="w-full flex flex-col mt-20 ">
+      <ProfStat title="Status" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668986188/gadgeon/energyville/Profile_ub7imq.png"/>
     </div>
   </div>
 </Layout>
 
-<style>
-  
-  p {
-    font-size: 40px;
-    font-weight: 200;
-    color: white;
-    line-height: 50px;
-  }
-</style>

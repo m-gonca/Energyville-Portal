@@ -1,25 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Profile from "../components/Profile.astro";
+import ProfComp from "../components/ProfComp.astro";
 
 ---
-
 <Layout title="Energyville">
   <div class="flex">
     <Sidebar/>
     <div class="w-full flex flex-col mt-20">
-      <Profile title="Company" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668986188/gadgeon/energyville/Profile_ub7imq.png"/>
+      <ProfComp title="Company" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668986188/gadgeon/energyville/Profile_ub7imq.png"/>
     </div>
   </div>
 </Layout>
-
-<style>
-  
-  p {
-    font-size: 40px;
-    font-weight: 200;
-    color: white;
-    line-height: 50px;
-  }
-</style>
