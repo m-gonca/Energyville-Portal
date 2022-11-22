@@ -1,20 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Set from "../components/Set.astro";
+import SetDoc from "../components/SetDoc.astro";
 
-const name = "*partner name*";
 ---
 
 <Layout title="Energyville">
   <div class="flex">
     <Sidebar/>
     <div class="w-full flex flex-col ">
-      <div class="text-left p-8 px-40">
-        <h1 class="text-6xl font-medium">Welcome back <span class="italic font-light">{ name }</span></h1>
-      </div>
-      <Set title="Upcoming events" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668952448/gadgeon/energyville/Group_1_azi9sx.png"/>
-      <Set title="Upcoming trainings" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668956339/gadgeon/energyville/Recurso_5_1_1_qy1des.png"/>
+      <SetDoc title="Photos" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076625/gadgeon/energyville/Cameras_dtdfkg.png"/>
+      <SetDoc title="Logos" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076625/gadgeon/energyville/Cameras_dtdfkg.png"/>
+      <SetDoc title="Presentations" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076698/gadgeon/energyville/Marketing_yjqmay.png"/>
+      <SetDoc title="Documents" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076738/gadgeon/energyville/Document_umilkd.png"/>
     </div>
   </div>
 </Layout>

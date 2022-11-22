@@ -1,0 +1,11 @@
+---
+export interface Props {
+  img: string;
+}
+const { img } = Astro.props;
+
+---
+<div class="h-[200px] w-[200px] flex justify-center items-center bg-[#8DC63F] shadow-2xl rounded-xl">
+	<img src={ img } alt="icon" class="h-20 w-20">
+</div>
+
