@@ -3,9 +3,24 @@ export interface Props {
   img: string;
 }
 const { img } = Astro.props;
-
 ---
-<div class="h-[200px] w-[200px] flex justify-center items-center bg-[#8DC63F] shadow-2xl rounded-xl">
-	<img src={ img } alt="icon" class="h-20 w-20">
-</div>
 
+<div
+  class="h-[200px] w-[200px] flex justify-center items-center m-auto bg-[#8DC63F] shadow-2xl rounded-xl"
+>
+  <div class="w-full px-4 flex flex-col gap-4 pb-0">
+    <div class="w-full flex justify-center ">
+      <img src={img} alt="icon" class="h-20 w-20" />
+    </div>
+    <div class="w-full px-2 flex flex-col">
+      <p class="font-light">Document-Description</p>
+      <a href="#"
+        ><img
+          src="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668988967/gadgeon/energyville/icon__cloud_download__esc2gx.png"
+          alt="download icon"
+          class="h-8"
+        />
+      </a>
+    </div>
+  </div>
+</div>

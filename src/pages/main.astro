@@ -3,19 +3,24 @@ import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
 import SetTrain from "../components/SetTrain.astro";
 import SetEvents from "../components/SetEvents.astro";
-
+import ButtonOther from "../components/ButtonOther.astro";
 const name = "*partner name*";
 ---
 
 <Layout title="Energyville">
-  <div class="flex">
+  <div class="w-full flex flex-col lg:flex-row">
     <Sidebar/>
-    <div class="w-full flex flex-col ">
-      <div class="text-left p-8 px-40">
-        <h1 class="text-6xl font-medium">Welcome back <span class="italic font-light">{ name }</span></h1>
+    <div id="top" class="w-full flex flex-col">
+      <div class="text-center p-4 lg:text-left lg:p-8 lg:px-40">
+        <h1 class="text-4xl lg:text-6xl font-medium">Welcome back <span class="italic font-light">{ name }</span></h1>
       </div>
       <SetEvents title="Upcoming events" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668952448/gadgeon/energyville/Group_1_azi9sx.png"/>
       <SetTrain title="Upcoming trainings" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1668956339/gadgeon/energyville/Recurso_5_1_1_qy1des.png"/>
+      <div class="w-full flex justify-end my-4">
+        <div class="w-34 px-4 ">
+          <ButtonOther href="#top" title="Go Up!" />
+        </div>
+      </div>
     </div>
   </div>
 </Layout>

@@ -9,21 +9,19 @@ const { title, img } = Astro.props;
 ---
 
 <div class="flex flex-col w-full pt-24 pl-40">
-  <div class="flex flex-col h-full w-4/5 gap-14 ">
-   
-      <Heading title={title} />
-      <div class="flex flex-wrap gap-4">
-        <Item img={ img } />
-        <Item img={ img } />
-        <Item img={ img } />
-        <Item img={ img }/>
-        <Item img={ img } />
-        <Item img={ img } />
-        <Item img={ img } />
-		<Item img={ img } />
-        <Item img={ img } />
-        <Item img={ img } />
-      </div>
-   
+  <div class="flex flex-col h-full w-4/5 gap-14">
+    <Heading title={title} />
+    <div class="m-auto flex flex-wrap flex-row gap-y-10">
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+      <Item img={img} />
+    </div>
   </div>
 </div>

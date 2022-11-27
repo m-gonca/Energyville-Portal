@@ -2,18 +2,50 @@
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/Sidebar.astro";
 import SetDoc from "../components/SetDoc.astro";
-
+import ButtonOther from "../components/ButtonOther.astro";
 ---
 
 <Layout title="Energyville">
   <div class="flex">
-    <Sidebar/>
+    <Sidebar />
     <div class="w-full flex flex-col ">
-      <SetDoc title="Photos" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076625/gadgeon/energyville/Cameras_dtdfkg.png"/>
-      <SetDoc title="Logos" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076625/gadgeon/energyville/Cameras_dtdfkg.png"/>
-      <SetDoc title="Presentations" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076698/gadgeon/energyville/Marketing_yjqmay.png"/>
-      <SetDoc title="Documents" img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076738/gadgeon/energyville/Document_umilkd.png"/>
+      <div class="flex w-full pt-24 pl-40">
+        <div id="top" class="w-4/5 grid grid-cols-4 gap-4">
+          <ButtonOther href="#photos" title="Photos" />
+          <ButtonOther href="#logos" title="Logos" />
+          <ButtonOther href="#presentations" title="Presentations" />
+          <ButtonOther href="#documents" title="Documents" />
+        </div>
+      </div>
+      <div id="photos">
+        <SetDoc
+          title="Photos"
+          img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076625/gadgeon/energyville/Cameras_dtdfkg.png"
+        />
+      </div>
+      <div id="logos">
+        <SetDoc
+          title="Logos"
+          img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076625/gadgeon/energyville/Cameras_dtdfkg.png"
+        />
+      </div>
+      <div id="presentations">
+        <SetDoc
+          title="Presentations"
+          img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076698/gadgeon/energyville/Marketing_yjqmay.png"
+        />
+      </div>
+      <div id="documents">
+        <SetDoc
+          title="Documents"
+          img="https://res.cloudinary.com/dmcofgm8p/image/upload/v1669076738/gadgeon/energyville/Document_umilkd.png"
+        />
+      </div>
+      <div class="w-full flex justify-end my-4">
+        <div class="w-34 px-4 ">
+          <ButtonOther href="#top" title="Go Up!" />
+        </div>
+      </div>
     </div>
   </div>
 </Layout>
-
